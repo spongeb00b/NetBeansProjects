@@ -1,0 +1,147 @@
+               MatrixMe! v0.1
+Distribuito sotto licenza GNU-GPL per info:
+http://www.gnu.org/licenses/gpl.html
+
+
+MatrixMe! e' un applicazione scritta in Java 
+funzionale per l'apprendimento degli argomenti
+di Algebra Lineare trattati nel secondo modulo
+del corso di Matematica Discreta.
+Il programma consente, attraverso i tasti o dal
+menu' modifica, di manipolare matrici della dimen-
+sione massima di 5 x 5, di visualizzarne le
+proprieta' e di scegliere il dominio per i valori
+numerici che possono variare tra numeri razionali 
+(interi o frazioni) e valori appartenenti alle 
+classi di congruenza modulo p (con p numero primo).
+Le frazioni inserite automaticamente vengono pro-
+cessate e ridotte ai minimi termini mentre i valori
+appartenti a Zp vengono riportati nelle rispettive
+classi di congruenza (ovvero compresi tra 0 e p-1).
+Nel caso di conversione da Q a Zp per valori sotto-
+forma di frazione, viene moltiplicato il numeratore 
+per l'inverso moltiplicativo del denominatore e 
+successivamente riportato il risultato nella sua 
+classe di congruenza.
+Ogni matrice creata deve essere selezionata, cliccan-
+doci sopra,(sfondo della matrice di colore giallo)
+per poterla manipolare. 
+Non e' possibile selezionare piu' di una matrice salvo
+che per le operazioni di PRODOTTO riga per colonna
+o di SOMMA (vedi rispettive voci).
+
+MODIFICA:
+Attivato se la matrice e' selezionata, consente di 
+modificare i valori presenti in essa.
+
+DETERMINANTE:
+Calcola e visualizza il determinante della matrice 
+(valido solo per matrici quadrate), viene calcolato 
+applicando la trasformazione a scala della matrice e 
+moltiplicando tra di loro gli elementi della diagonale.
+
+INVERSA:
+Attivato se la matrice e' selezionata, calcola e visua-
+lizza la matrice inversa (valido solo per matrici
+quadrate e invertibili ovvero con il determinante 
+diverso da zero) attraverso l'algoritmo di Gauss-Jordan.
+
+TRASPOSTA:
+Attivato se la matrice e' selezionata, calcola e visualizza
+la matrice trasposta.
+
+GAUSS:
+Attivato se la matrice e' selezionata, calcola e visualizza
+la matrice a scala corrispondente attraverso l'Algoritmo
+di trasformazione di Gauss dall'alto verso il basso.
+La matrice trasformata avra' lo sfondo con posizione
+superiore rispetto alla diagonale di colore rosso 
+visualizzandone l'andamento a scala. 
+
+SOMMA:
+Attivato con la prima matrice selezionata e cliccando sulla 
+seconda, effettua la somma dei valori di posizione corrispondente 
+delle due matrici (valido solo per matrici con le stesse 
+dimensioni).
+
+PRODOTTO:
+Attivato selezionando la prima matrice e cliccando sulla
+seconda, effettua il prodotto riga per colonna delle due matrici
+(valido solo se il numero di colonne della prima matrice e' 
+uguale al numero delle righe della seconda, la matrice prodotto
+avra' per dimensione il numero delle righe della prima matrice
+e il numero di colonne della seconda).
+
+CASUALE:
+Crea e visualizza una matrice con valori casuali in base ai 
+valori del numero righe, colonne e del dominio impostato.
+Attraverso lo slide e' possibile variare la percentuale di 
+frazioni presente nella matrice (che quindi sara' attivo solo
+per matrici con dominio Q), i valori casuali variano
+per il numeratore tra 0 e 20 e per il denominatore tra 1 e 10.
+
+PROPRIETA':
+Attivato selezionando una matrice, apre una finestra di dialogo
+sulla destra dove sono presenti le proprieta' della matrice quali
+la dimensione, il dominio, il numero di pivot e la loro posizione 
+(calcolati attraverso l'algoritmo di Gauss), il valore del 
+determinante (se la matrice selezionata e' quadrata), il rango 
+della matrice.
+Considerando la matrice come una applicazione lineare visualizza
+le proprieta' come la dimensione di Im(F), la dimensione di Ker(F),
+l'iniettivita', la suriettivita' e la biiettivita'.
+E' possibile il salvataggio delle proprieta' di una matrice in
+un file di testo attraverso l'apposito bottone SALVA.        
+
+RADIO BOTTONI SELEZIONE DOMINIO:
+Consentono di impostare il dominio per la creazione di una
+nuova matrice o la trasformazione del dominio di una matrice
+selezionata. 
+Per il campo razionale le variabili numeriche per i valori 
+della matrice sono di tipo long a 64 bit con un'ampiezza di 
+rappresentazione che va da:
+-9.223.372.036.854.775.808 a +9.223.372.036.854.775.807
+Per il campo Zp i valori ammessi, per p, sono tutti i numeri 
+primi da 2 a 97.
+
+APERTURA E SALVATAGGIO FILE:
+E' possibile salvare i valori di una matrice in un file 
+di testo, senza un'estenzione particolare. Tali valori 
+verranno scritti rispettivamente uno per riga, nelle prime
+tre righe iniziali verranno riportati: numero
+delle righe, numero delle colonne e il dominio (1 per 
+i razionali o un numero primo da 2 a 97 per le classi di 
+congruenza Zp). 
+Eventuali files con valori errati, non numerici o fuori
+range non verranno aperti dal programma con segnalazione
+dell'eventuale errore.
+
+Inserire valori numerici troppo elevati fara' matematicamente
+impallare il vostro computer! :)
+
+
+MatrixMe! e' software libero; e' possibile ridistribuirlo
+ e/o modificarlo secondo i termini della licenza GNU
+General Public License, come pubblicata dalla Free 
+Software Foundation; versione 2 della licenza, o 
+(a scelta) una versione piu' recente.
+
+MatrixMe! e' distribuito nella speranza che possa risultare
+utile, ma SENZA ALCUNA GARANZIA, nemmeno la garanzia 
+implicita di COMMERCIABILITA' o APPLICABILITA' PER UNO 
+SCOPO PARTICOLARE. Per maggiori dettagli consultare
+la GNU General Public License.
+
+Una copia della GNU General Public License dovrebbe 
+essere stata fornita con MatrixMe!. In caso contrario 
+scrivere a:
+  
+Free Software Foundation, Inc.
+51 Franklin Street, Fifth Floor, Boston, MA
+02110-1301 USA
+
+INFO COMMENTI INSULTI e DEBUG:
+
+raffaele.tosti@studenti.unipg.it
+
+

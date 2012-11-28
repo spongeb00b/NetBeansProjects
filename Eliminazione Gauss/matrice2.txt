@@ -1,0 +1,111 @@
+MatrixMe è un applicazione scritta in Java 
+funzionale per l'apprendimento degli argomenti
+di Algebra Lineare trattati nel secondo modulo
+del corso di Matematica Discreta.
+Il programma consente, attraverso i tasti o dal
+menù modifica, di manpolare matrici della dimen-
+sione massima di 5 x 5, di visualizzarne le
+proprietà e di scegliere il dominio per i valori
+numerici che può variare tra i razionali (interi 
+o frazioni) e valori appartenenti alle classi di
+congruenza modulo p (con p numero primo).
+Le frazioni inserite automaticamente vengono pro-
+cessate e ridotte ai minimi termini mentre quelli
+appartenti a Zp vengono riportati nei valori di 
+congruenza (ovvero compresi tra 0 e p-1).
+Nel caso di conversione da Q a Zp per valori sotto-
+forma di frazione, viene moltiplicato il numeratore 
+per l'inverso moltiplicativo del denominatore e 
+successivamente riportato il risultato nella sua 
+classe di congruenza.
+Ogni matrice creata deve essere selezionata, cliccan-
+doci sopra,(sfondo della matrice di colore giallo)
+per poter manipolarla. 
+Non è possibile selezionare più di una matrice salvo
+che per le operazioni di PRODOTTO riga per colonna
+o di SOMMA (vedi rispettive voci).
+Per selezionare un'altra matrice occorre prima de-
+selezionare la prima.
+
+MODIFICA:
+Attivato se la matrice è selezionata, consente di 
+modificare i valori presenti in essa.
+
+DETERMINANTE:
+Calcola e visualizza il determinante della matrice 
+(valido solo per matrici quadrate), viene calcolato 
+applicando la trasformazione a scala della matrice e 
+moltiplicando tra di loro gli elementi della diagonale.
+
+INVERSA:
+Attivato se la matrice è selezionata calcola e visua-
+lizza la matrice inversa (valido solo per matrici
+quadrate e invertibili ovvero con il determinante 
+diverso da zero) attraverso l'algoritmo di Gauss-Jordan.
+
+TRASPOSTA:
+Attivato se la matrice è selezionata calcola e visualizza
+la matrice trasposta.
+
+GAUSS:
+Attivato se la matrice è selezionata calcola e visualizza
+la matrice a scala corrispondente attraverso l'Algoritmo
+di trasformazione di Gauss dall'alto verso il basso.
+La matrice trasformata avrà lo sfondo dei valori diversi da
+zero di colore rosso visualizzandone l'andamento a scala. 
+
+SOMMA:
+Attivato selezionando la prima matrice e cliccando sulla 
+seconda effettua la somma dei valori corrispondenti delle
+due matrici (valido solo per matrici con le stesse dimensioni).
+
+PRODOTTO:
+Attivato selezionando la prima matrice e cliccando sulla
+secondo effettua il prodotto riga per colonna delle due matrici
+(valido solo se il numero di colonne della prima matrice è 
+uguale al numero delle righe della seconda, la matrice prodotto
+avrà per dimensione il numero delle righe della prima matrice
+e il numero di colonne della seconda).
+
+CASUALE:
+Crea e visualizza una matrice con valori casuali in base ai 
+valori del numero righe, colonne e del dominio impostato.
+Attraverso lo slide è possibile variare la percentuale di 
+frazioni presente nella matrice, i valori casuali variano
+per il numeratore tra 0 e 20 e per il denominatore tra 1 e 10.
+
+PROPRIETA':
+Attivato selezionando una matrice attiva una finestra di dialogo
+sulla destra dove sono presenti le proprietà della matrici quali
+la dimensione, il dominio, il numero di pivot e la loro posizione 
+(calcolati attraverso l'algoritmo di Gauss), il valore del 
+determinante (se la matrice selezionata è quadrata), il rango 
+della matrice.
+Considerando la matrice come una applicazione lineare visualizza
+le proprietà come la dimensione di Im(F), la dimensione di Ker(F),
+l'iniettività, la suriettività e la biiettività.
+E' possibile il salvataggio delle proprietà di una matrice in
+un file di testo attraverso l'apposito bottone SALVA.        
+
+RADIO BOTTONI SELEZIONE DOMINIO:
+Consentono di impostare il dominio per la creazione di una
+nuova matrice o la trasformazione del dominio di una matrice
+selezionata. 
+Per il campo razionale le variabili numeriche sono di tipo
+long a 64 bit con un'ampiezza di rappresentazione che va da:
+-9.223.372.036.854.775.808 a +9.223.372.036.854.775.807
+Per il campo Zp i valori ammessi sono tutti i numeri primi
+compresi tra 2 e 997.
+
+APERTURA E SALVATAGGIO FILE:
+E' possibile salvare i valori una matrice in un file 
+di testo, senza un'estenzione particolare, i valori 
+verranno scritti rispettivamente uno per riga, nelle prime
+tre righe iniziali verranno scritti i valori del numero
+delle righe, il numero delle colonne, e il dominio (1 per 
+i razionali o un numero primo tra 2 e 997 per le classi 
+di congruenza Zp). 
+Eventuali files con valori errati, non numerici o fuori
+range non verranno aperti dal programma.
+
+
